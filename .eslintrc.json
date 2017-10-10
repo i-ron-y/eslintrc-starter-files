@@ -3,14 +3,13 @@
     // [JSON]
     //
     // An .eslintrc starter file with all rules (set to 0) and envs (set to false) listed.
-    // Up-to-date as of 2017-08-24.
+    // Other options (although by no means comprehensive) are either set to false or else commented out.
+    // 
+    // Updated on 2017-10-10.
     //
     // ESLint docs -- Configuring ESLint:      https://eslint.org/docs/user-guide/configuring
     // ESLint docs -- List of available rules: https://eslint.org/docs/rules/
-    //
-    // Credits:
-    // Inspired by, and an update of, "ESLint Reset" by cletusw:
-    //      https://gist.github.com/cletusw/e01a85e399ab563b1236
+
 
     "parserOptions": {
 
@@ -20,17 +19,22 @@
         // "sourceType": "script",                 // set to "script" (default) or "module" if your code is in ECMAScript modules.
 
         "ecmaFeatures": {
+
             "globalReturn": false,              // allow return statements in the global scope
             "impliedStrict": false,             // enable global strict mode (if ecmaVersion is 5 or greater)
             "jsx": false,                       // enable JSX
 
+            "experimentalObjectRestSpread": false   // enable support for the experimental object rest/spread properties
             // (IMPORTANT: This is an experimental feature that may change significantly in the future.
             // It’s recommended that you do not write rules relying on this functionality unless you are
             // willing to incur maintenance cost when it changes.)
-
-            "experimentalObjectRestSpread": false   // enable support for the experimental object rest/spread properties
+        
         }
     },
+
+
+    // "parser": "espree",                         // compatible parsers: "espree" (default), "esprima", "babel-eslint", and "typescript-eslint-parser" (experimental)
+
 
     "env": {
 
@@ -62,11 +66,13 @@
 
     },
 
+
     "globals": {
 
         // e.g. "angular": true
     
     },
+
 
     "plugins": [
     
@@ -74,12 +80,24 @@
     
     ],
 
+
+    "extends": [
+
+        // "eslint:recommended",                   // enables a subset of core rules that report common problems, which have a check mark on the rules page
+        // "eslint:all",                           // enable all core rules in the currently installed version of ESLint
+    
+    ],
+
+
     "rules": {
 
         // Usage:
         //    "off" or 0 - turn the rule off
         //    "warn" or 1 - turn the rule on as a warning (doesn’t affect exit code)
         //    "error" or 2 - turn the rule on as an error (exit code is 1 when triggered)
+        //    
+        //    If a rule has additional options, you can specify them using array literal syntax, such as:
+        //        "quotes": [2, "double"]
 
 
         ////////// Possible Errors //////////
