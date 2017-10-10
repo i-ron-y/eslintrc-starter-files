@@ -1,8 +1,9 @@
 # .eslintrc starter files
 
 .eslintrc starter files with all rules (set to 0) and envs (set to false) listed.
+Other options (although by no means comprehensive) are either set to false or else commented out.
 
-Up-to-date as of 2017-09-04.
+Updated on 2017-10-10.
 
 JavaScript, JSON, and YAML versions.
 
