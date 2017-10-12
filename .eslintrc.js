@@ -5,7 +5,7 @@ module.exports = {
     // An .eslintrc starter file with all rules (set to 0) and envs (set to false) listed.
     // Other options (although by no means comprehensive) are either set to false or else commented out.
     // 
-    // Updated on 2017-10-10.
+    // Updated on 2017-10-11.
     //
     // ESLint docs -- Configuring ESLint:      https://eslint.org/docs/user-guide/configuring
     // ESLint docs -- List of available rules: https://eslint.org/docs/rules/
@@ -95,14 +95,14 @@ module.exports = {
         //    "off" or 0 - turn the rule off
         //    "warn" or 1 - turn the rule on as a warning (doesn’t affect exit code)
         //    "error" or 2 - turn the rule on as an error (exit code is 1 when triggered)
-        //    
+        //
         //    If a rule has additional options, you can specify them using array literal syntax, such as:
         //        "quotes": [2, "double"]
-        
 
-        ////////// Possible Errors //////////
 
-        "for-direction": 0,                     // enforce “for” loop update clause moving the counter in the right direction
+        //////// Possible Errors ////////
+
+        "for-direction": 0,                     // enforce “for” loop update clause moving the counter in the right direction.
         "getter-return": 0,                     // enforce return statements in getters
         "no-await-in-loop": 0,                  // disallow await inside of loops
         "no-compare-neg-zero": 0,               // disallow comparing against -0
@@ -110,7 +110,7 @@ module.exports = {
         "no-console": 0,                        // disallow the use of console
         "no-constant-condition": 0,             // disallow constant expressions in conditions
         "no-control-regex": 0,                  // disallow control characters in regular expressions
-        "no-debugger": 0,                       // disallow use of debugger
+        "no-debugger": 0,                       // disallow the use of debugger
         "no-dupe-args": 0,                      // disallow duplicate arguments in function definitions
         "no-dupe-keys": 0,                      // disallow duplicate keys in object literals
         "no-duplicate-case": 0,                 // disallow duplicate case labels
@@ -122,7 +122,7 @@ module.exports = {
         "no-extra-semi": 0,                     // disallow unnecessary semicolons
         "no-func-assign": 0,                    // disallow reassigning function declarations
         "no-inner-declarations": 0,             // disallow variable or function declarations in nested blocks
-        "no-invalid-regexp": 0,                 // disallow invalid regular expression strings in the RegExp constructor
+        "no-invalid-regexp": 0,                 // disallow invalid regular expression strings in RegExp constructors
         "no-irregular-whitespace": 0,           // disallow irregular whitespace outside of strings and comments
         "no-obj-calls": 0,                      // disallow calling global object properties as functions
         "no-prototype-builtins": 0,             // disallow calling some Object.prototype methods directly on objects
@@ -138,9 +138,9 @@ module.exports = {
         "valid-typeof": 0,                      // enforce comparing typeof expressions against valid strings
 
 
-        ////////// Best Practices //////////
+        //////// Best Practices ////////
 
-        "accessor-pairs": 0,                    // enforces getter/setter pairs in objects
+        "accessor-pairs": 0,                    // enforce getter and setter pairs in objects
         "array-callback-return": 0,             // enforce return statements in callbacks of array methods
         "block-scoped-var": 0,                  // enforce the use of variables within the scope they are defined
         "class-methods-use-this": 0,            // enforce that class methods utilize this
@@ -148,19 +148,19 @@ module.exports = {
         "consistent-return": 0,                 // require return statements to either always or never specify values
         "curly": 0,                             // enforce consistent brace style for all control statements
         "default-case": 0,                      // require default cases in switch statements
-        "dot-location": 0,                      // enforces consistent newlines before and after dots
+        "dot-location": 0,                      // enforce consistent newlines before and after dots
         "dot-notation": 0,                      // enforce dot notation whenever possible
         "eqeqeq": 0,                            // require the use of === and !==
         "guard-for-in": 0,                      // require for-in loops to include an if statement
         "no-alert": 0,                          // disallow the use of alert, confirm, and prompt
-        "no-caller": 0,                         // disallow use of arguments.caller or arguments.callee
+        "no-caller": 0,                         // disallow the use of arguments.caller or arguments.callee
         "no-case-declarations": 0,              // disallow lexical declarations in case clauses
-        "no-div-regex": 0,                      // disallow division operators explicitly at beginning of regular expression
+        "no-div-regex": 0,                      // disallow division operators explicitly at the beginning of regular expressions
         "no-else-return": 0,                    // disallow else blocks after return statements in if statements
         "no-empty-function": 0,                 // disallow empty functions
         "no-empty-pattern": 0,                  // disallow empty destructuring patterns
         "no-eq-null": 0,                        // disallow null comparisons without type-checking operators
-        "no-eval": 0,                           // disallow use of eval()
+        "no-eval": 0,                           // disallow the use of eval()
         "no-extend-native": 0,                  // disallow extending native types
         "no-extra-bind": 0,                     // disallow unnecessary calls to .bind()
         "no-extra-label": 0,                    // disallow unnecessary labels
@@ -212,12 +212,12 @@ module.exports = {
         "yoda": 0,                              // require or disallow “Yoda” conditions
 
 
-        ////////// Strict Mode //////////
+        //////// Strict Mode ////////
 
         "strict": 0,                            // require or disallow strict mode directives
 
 
-        ////////// Variables //////////
+        //////// Variables ////////
 
         "init-declarations": 0,                 // require or disallow initialization in variable declarations
         "no-catch-shadow": 0,                   // disallow catch clause parameters from shadowing variables in the outer scope
@@ -226,29 +226,29 @@ module.exports = {
         "no-restricted-globals": 0,             // disallow specified global variables
         "no-shadow": 0,                         // disallow variable declarations from shadowing variables declared in the outer scope
         "no-shadow-restricted-names": 0,        // disallow identifiers from shadowing restricted names
-        "no-undef": 0,                          // disallow the use of undeclared variables unless mentioned in a /*global */ block
+        "no-undef": 0,                          // disallow the use of undeclared variables unless mentioned in /*global */ comments
         "no-undef-init": 0,                     // disallow initializing variables to undefined
         "no-undefined": 0,                      // disallow the use of undefined as an identifier
         "no-unused-vars": 0,                    // disallow unused variables
         "no-use-before-define": 0,              // disallow the use of variables before they are defined
 
 
-        ////////// Node.js and CommonJS //////////
+        //////// Node.js and CommonJS ////////
 
         "callback-return": 0,                   // require return statements after callbacks
         "global-require": 0,                    // require require() calls to be placed at top-level module scope
-        "handle-callback-err": 0,               // enforces error handling in callbacks
+        "handle-callback-err": 0,               // require error handling in callbacks
         "no-buffer-constructor": 0,             // disallow use of the Buffer() constructor
         "no-mixed-requires": 0,                 // disallow require calls to be mixed with regular variable declarations
         "no-new-require": 0,                    // disallow new operators with calls to require
         "no-path-concat": 0,                    // disallow string concatenation with __dirname and __filename
-        "no-process-env": 0,                    // disallow use of process.env
-        "no-process-exit": 0,                   // disallow process.exit()
+        "no-process-env": 0,                    // disallow the use of process.env
+        "no-process-exit": 0,                   // disallow the use of process.exit()
         "no-restricted-modules": 0,             // disallow specified modules when loaded by require
         "no-sync": 0,                           // disallow synchronous methods
 
 
-        ////////// Stylistic Issues //////////
+        //////// Stylistic Issues ////////
 
         "array-bracket-newline": 0,             // enforce linebreaks after opening and before closing array brackets
         "array-bracket-spacing": 0,             // enforce consistent spacing inside array brackets
@@ -261,7 +261,7 @@ module.exports = {
         "comma-spacing": 0,                     // enforce consistent spacing before and after commas
         "comma-style": 0,                       // enforce consistent comma style
         "computed-property-spacing": 0,         // enforce consistent spacing inside computed property brackets
-        "consistent-this": 0,                   // enforces consistent naming when capturing the current execution context
+        "consistent-this": 0,                   // enforce consistent naming when capturing the current execution context
         "eol-last": 0,                          // require or disallow newline at the end of files
         "func-call-spacing": 0,                 // require or disallow spacing between function identifiers and their invocations
         "func-name-matching": 0,                // require function names to match the name of the variable or property to which they are assigned
@@ -339,7 +339,7 @@ module.exports = {
         "wrap-regex": 0,                        // require parenthesis around regex literals
 
 
-        ////////// ECMAScript 6 //////////
+        //////// ECMAScript 6 ////////
 
         "arrow-body-style": 0,                  // require braces around arrow function bodies
         "arrow-parens": 0,                      // require parentheses around arrow function arguments
@@ -371,8 +371,9 @@ module.exports = {
         "sort-imports": 0,                      // enforce sorted import declarations within modules
         "symbol-description": 0,                // require symbol descriptions
         "template-curly-spacing": 0,            // require or disallow spacing around embedded expressions of template strings
-        "yield-star-spacing": 0                 // require or disallow spacing around the * in yield* expressions
-    
+        "yield-star-spacing": 0,                // require or disallow spacing around the * in yield* expressions
+
+
     }
 
 }
