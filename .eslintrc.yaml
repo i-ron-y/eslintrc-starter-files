@@ -5,7 +5,7 @@
 # An .eslintrc starter file with all rules (set to 0) and envs (set to false) listed.
 # Other options (although by no means comprehensive) are either set to false or else commented out.
 # 
-# Updated on 2017-10-10.
+# Updated on 2017-10-20.
 # 
 # ESLint docs -- Configuring ESLint:      https://eslint.org/docs/user-guide/configuring
 # ESLint docs -- List of available rules: https://eslint.org/docs/rules/
@@ -244,7 +244,7 @@ rules:
     array-bracket-newline: 0             # enforce linebreaks after opening and before closing array brackets
     array-bracket-spacing: 0             # enforce consistent spacing inside array brackets
     array-element-newline: 0             # enforce line breaks after each array element
-    block-spacing: 0                     # enforce consistent spacing inside single-line blocks
+    block-spacing: 0                     # disallow or enforce spaces inside of blocks after opening block and before closing block
     brace-style: 0                       # enforce consistent brace style for blocks
     camelcase: 0                         # enforce camelcase naming convention
     capitalized-comments: 0              # enforce or disallow capitalization of the first letter of a comment
@@ -269,6 +269,7 @@ rules:
     line-comment-position: 0             # enforce position of line comments
     linebreak-style: 0                   # enforce consistent linebreak style
     lines-around-comment: 0              # require empty lines around comments
+    lines-between-class-members: 0       # require or disallow an empty line between class members
     max-depth: 0                         # enforce a maximum depth that blocks can be nested
     max-len: 0                           # enforce a maximum line length
     max-lines: 0                         # enforce a maximum number of lines per file
@@ -276,6 +277,7 @@ rules:
     max-params: 0                        # enforce a maximum number of parameters in function definitions
     max-statements: 0                    # enforce a maximum number of statements allowed in function blocks
     max-statements-per-line: 0           # enforce a maximum number of statements allowed per line
+    multiline-comment-style: 0           # enforce a particular style for multiline comments
     multiline-ternary: 0                 # enforce newlines between operands of ternary expressions
     new-cap: 0                           # require constructor names to begin with a capital letter
     new-parens: 0                        # require parentheses when invoking a constructor with no arguments
