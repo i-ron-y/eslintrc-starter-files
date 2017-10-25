@@ -83,8 +83,8 @@
 
     "extends": [
 
-        // "eslint:recommended",                   // enables a subset of core rules that report common problems, which have a check mark on the rules page
-        // "eslint:all",                           // enable all core rules in the currently installed version of ESLint
+        // "eslint:recommended"                    // enables a subset of core rules that report common problems, which have a check mark on the rules page
+        // "eslint:all"                            // enable all core rules in the currently installed version of ESLint
     
     ],
 

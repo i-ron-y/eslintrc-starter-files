@@ -62,22 +62,22 @@ env:
     greasemonkey: false                 # GreaseMonkey globals.
 
 
-globals:
+# globals:
 
-    # e.g. angular
-    # - angular: true
-
-
-plugins:
-
-    # e.g. react (must run `npm install eslint-plugin-react` first)
-    # - react
+#     # e.g. angular
+#     # angular: true
 
 
-extends:
+# plugins:
 
-    # - eslint:recommended                # enables a subset of core rules that report common problems, which have a check mark on the rules page
-    # - eslint:all                        # enable all core rules in the currently installed version of ESLint
+#     # e.g. react (must run `npm install eslint-plugin-react` first)
+#     # - react
+
+
+# extends:
+
+#     # - eslint:recommended                # enables a subset of core rules that report common problems, which have a check mark on the rules page
+#     # - eslint:all                        # enable all core rules in the currently installed version of ESLint
 
 
 rules:
