@@ -5,7 +5,7 @@ module.exports = {
     // An .eslintrc starter file with all rules (set to 0) and envs (set to false) listed.
     // Other options (although by no means comprehensive) are either set to false or else commented out.
     // 
-    // Updated on 2017-10-20.
+    // Updated on 2017-10-25.
     //
     // ESLint docs -- Configuring ESLint:      https://eslint.org/docs/user-guide/configuring
     // ESLint docs -- List of available rules: https://eslint.org/docs/rules/
@@ -373,7 +373,7 @@ module.exports = {
         "sort-imports": 0,                      // enforce sorted import declarations within modules
         "symbol-description": 0,                // require symbol descriptions
         "template-curly-spacing": 0,            // require or disallow spacing around embedded expressions of template strings
-        "yield-star-spacing": 0,                // require or disallow spacing around the * in yield* expressions
+        "yield-star-spacing": 0                 // require or disallow spacing around the * in yield* expressions
 
 
     }
