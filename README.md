@@ -4,7 +4,7 @@
 
 Other options (although by no means comprehensive) are either set to false or else commented out.
 
-Updated on 2017-11-13.
+Updated on 2017-12-16.
 
 JavaScript, JSON, and YAML versions.
 
